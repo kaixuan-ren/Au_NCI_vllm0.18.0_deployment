@@ -1,7 +1,10 @@
-# Au_NCI_vllm0.18.0_deployment
+# Au NCI vllm0.18.0 Enviornment Setup
 
-# Setup Code
-Most easy way, but it will take 3h
+The system of NCI is too old, and VLLM has not provide wheel for it. (Only avaliable is 0.11.0 and it not support for newest model)
+
+Below is the Most easy way, but it will take 3h
+
+Launch a gpuhopper + Jobfs size: 200GB and run below code in terminal:
 
 ```bash
 cd /scratch/xxx/xxx/
@@ -19,3 +22,6 @@ uv venv vllm_venv
 source vllm_venv/bin/activate
 
 uv pip install vllm==0.18.0
+```
+
+Or you can ask me for the wheel or follow the nci_vllm0_18_0_stetup.py for a faster way.
