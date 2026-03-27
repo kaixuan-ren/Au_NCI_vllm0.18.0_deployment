@@ -2,7 +2,7 @@
 
 The system of NCI is too old, and VLLM has not provide wheel for it. (Only avaliable is 0.11.0 and it not support for newest model)
 
-Below is the Most easy way, but it will take 3h
+Below is the most easy way, but it will take 3h
 
 Launch a gpuhopper + Jobfs size: 200GB and run below code in terminal:
 
@@ -24,4 +24,6 @@ source vllm_venv/bin/activate
 uv pip install vllm==0.18.0
 ```
 
-Or you can ask me for the wheel or follow the nci_vllm0_18_0_stetup.py for a faster way.
+You can use the prebuild wheel file from [Releases](../../releases). (Chatgpt how to use it~)
+
+Or follow the [nci_vllm0_18_0_setup.py](./nci_vllm0_18_0_setup.py) for a faster way by yourself.
